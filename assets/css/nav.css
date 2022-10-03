@@ -1,0 +1,17 @@
+:root{
+    --first-color: #692525fa;
+    --second-color: #af995b;
+}
+.last{
+    right: 10px;
+    top: 0;
+}
+.background{
+    background: linear-gradient(to right, var(--first-color) 0%, var(--second-color) 100%);
+}
+
+@media (max-width:576px) {
+    .background{
+        background: linear-gradient(to bottom, var(--first-color) 0%, var(--second-color) 100%);
+    }
+}

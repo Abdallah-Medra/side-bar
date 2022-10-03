@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+    <script
+      src="https://kit.fontawesome.com/e6cf7d485c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="sticky-top">
+      <div class="navbar pb-0 bg-white">
+        <div class="container">
+          <a href="#" class="navbar-brand fs-3 text-primary">/zero</a>
+          <form
+            class="d-flex w-50 position-relative d-none d-md-block"
+            role="search"
+          >
+            <input
+              class="form-control me-2 border-primary rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn text-primary position-absolute last"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div>
+            <button
+              class="btn btn-outline-primary rounded-pill px-3 mx-lg-3 d-none d-md-inline-block"
+              data-bs-toggle="modal"
+              data-bs-target="#sign_in"
+            >
+              sign in
+            </button>
+            <button
+              class="btn btn-outline-primary rounded-pill px-3 mx-lg-3 d-none d-md-inline-block"
+              data-bs-toggle="modal"
+              data-bs-target="#sign_up"
+            >
+              sign up
+            </button>
+          </div>
+          <div>
+            <button
+              class="btn btn-outline-primary border border-1 d-sm-none"
+              data-bs-toggle="modal"
+              data-bs-target="#sign_in"
+            >
+              <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+            <button class="btn btn-outline-primary border border-1 d-sm-none">
+              <i
+                class="fa-solid fa-user-plus"
+                data-bs-toggle="modal"
+                data-bs-target="#sign_up"
+              ></i>
+            </button>
+            <button
+              class="btn btn-outline-primary d-sm-none border border-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="background w-100">
+          <div class="container">
+            <div class="navbar-expand-md w-100 d-md-block" id="navbarNav">
+              <ul class="navbar-nav justify-content-evenly">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Antiques</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">PC & Laptop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Mobile & Tablet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Console games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Cameras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Home Appliances</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <div
+        class="modal fade bg-black bg-opacity-75"
+        id="sign_up"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title text-light">Sign Up</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-5">
+              <form action="">
+                <div class="mb-3">
+                  <label for="user_name" class="form-label">User Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="user_name"
+                    placeholder="Enter user name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="tel" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="tel"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="Password_1" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="Password_1"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="Password_2" class="form-label"
+                    >Confirm password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="Password_2"
+                    placeholder="confirm password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary form-control">
+                  Sign Up
+                </button>
+                <div class="form-text">
+                  Already has an account?
+                  <a
+                    class="text-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#sign_in"
+                    style="cursor: pointer"
+                    >Sign In</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade bg-black bg-opacity-75"
+        id="sign_in"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title text-light">Sign In</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-5">
+              <form action="">
+                <div class="mb-3">
+                  <label for="user_name" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="user_name"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter user name or email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="Password_sign_in" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="Password_sign_in"
+                    placeholder="Password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary form-control">
+                  Sign In
+                </button>
+                <div id="emailHelp" class="form-text">
+                  Don't have an account?
+                  <a
+                    class="text-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#sign_up"
+                    style="cursor: pointer"
+                    >Sign Up</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+
+    <div class="main row container">
+      <!-- left -->
+      <div
+        class="col-2 bg-light d-flex flex-row justify-content-center pt-5 shadow"
+      >
+        <div class="d-flex flex-column gap-3">
+          <a class="fs-5 text-decoration-none" href="profile.html">Profile</a>
+          <a
+            class="fs-5 text-decoration-none border-bottom border-primary"
+            href="wishlist.html"
+            >Wishlist</a
+          >
+          <a class="fs-5 text-decoration-none" href="cart.html">Cart</a>
+          <a class="fs-5 text-decoration-none" href="userAds.html">Your Ads.</a>
+        </div>
+      </div>
+      <!-- wishList -->
+      <div class="col-10 ps-5 mt-3">
+        <div class="d-flex flex-column gap-1 ps-5 ms-5 w-100">
+          <label> Product:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="product name"
+            class="input border-1 border bg-light rounded p-2 w-100"
+          />
+          <br />
+          <label>Specifications:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="product Description"
+            class="input border-1 border bg-light rounded p-2 w-100"
+          />
+        </div>
+        <!-- items -->
+        <div class="d-flex flex-column gap-5 ps-5 ms-5 w-100">
+          <div class="item border rounded-3 p-4 mt-5 shadow-sm">
+            <div class="info">
+              <label>product:</label>
+              <h2 class="text-primary">Lenovo Laptop</h2>
+              <label> Specification:</label>
+              <h5 class="text-primary">
+                IdeaPad - 500 GB SSD - 16 GB RAM - Intel Core i7 processor 10th
+                generation
+              </h5>
+              <br />
+              <input type="checkbox" name="notifications" />
+              <label> Get notifications anytime the product is available</label>
+            </div>
+            <div class="actions d-flex justify-content-end">
+              <button class="btn text-bg-danger">Remove from list</button>
+            </div>
+          </div>
+          <div class="item border rounded-3 p-4 mt-5 shadow-sm">
+            <div class="info">
+              <label>product:</label>
+              <h2 class="text-primary">IPHONE 13 PRO</h2>
+              <label> Specification:</label>
+              <h5 class="text-primary">128 GB - silver -</h5>
+              <br />
+              <input type="checkbox" name="notifications" />
+              <label> Get notifications anytime the product is available</label>
+            </div>
+            <div class="actions d-flex justify-content-end">
+              <button class="btn text-bg-danger">Remove from list</button>
+            </div>
+          </div>
+          <div class="item border rounded-3 p-4 mt-5 shadow-sm">
+            <div class="info">
+              <label>product:</label>
+              <h2 class="text-primary">IPHONE 13 PRO</h2>
+              <label> Specification:</label>
+              <h5 class="text-primary">128 GB - silver -</h5>
+              <br />
+              <input type="checkbox" name="notifications" />
+              <label> Get notifications anytime the product is available</label>
+            </div>
+            <div class="actions d-flex justify-content-end">
+              <button class="btn text-bg-danger">Remove from list</button>
+            </div>
+          </div>
+
+          <div class="item border rounded-3 p-4 mt-5 shadow-sm">
+            <div class="info">
+              <label>product:</label>
+              <h2 class="text-primary">IPHONE 13 PRO</h2>
+              <label> Specification:</label>
+              <h5 class="text-primary">128 GB - silver -</h5>
+              <br />
+              <input type="checkbox" name="notifications" />
+              <label> Get notifications anytime the product is available</label>
+            </div>
+            <div class="actions d-flex justify-content-end">
+              <button class="btn text-bg-danger">Remove from list</button>
+            </div>
+          </div>
+          <div class="item border rounded-3 p-4 mt-5 shadow-sm">
+            <div class="info">
+              <label>product:</label>
+              <h2 class="text-primary">IPHONE 13 PRO</h2>
+              <label> Specification:</label>
+              <h5 class="text-primary">128 GB - silver -</h5>
+              <br />
+              <input type="checkbox" name="notifications" />
+              <label> Get notifications anytime the product is available</label>
+            </div>
+            <div class="actions d-flex justify-content-end">
+              <button class="btn text-bg-danger">Remove from list</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
